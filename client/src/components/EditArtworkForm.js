@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const NewArtworkForm = props => {
-  const [artwork, setArtwork] = useState(props.initialFormState);
+const EditArtworkForm = props => {
+  const [artwork, setArtwork] = useState(props.currentArtwork);
 
   const handleInputChange = event => {
     const { name, value } = event.target
@@ -10,22 +10,21 @@ const NewArtworkForm = props => {
 
   return (
       <form onSubmit={event => {
-        event.preventDefault()
+        event.preventDefault();
         if (!artwork.title || !artwork.info || !artwork.date) return;
-        props.addArtwork(artwork)
-        setArtwork(props.initialFormState)
+        props.updateArtwork(artwork)
       }}>
         <label>Title</label>
         <input type="text" name="title" value={artwork.title} onChange={handleInputChange} ></input>
-        {/* <label>Image</label>
-        <input type="image" alt="" name="image" value={artwork.image} onChange={handleInputChange} ></input> */}
-        <label>Information</label>
+        <label>Info</label>
         <input type="text" name="info" value={artwork.info} onChange={handleInputChange} ></input>
         <label>Date</label>
         <input type="text" name="date" value={artwork.date} onChange={handleInputChange} ></input>
-        <button>Submit new artwork</button>
+
+        <button>Update Artwork</button>
+        <button onClick={() => props.setEditing(false)}>Cancel</button>
       </form>
   )
 };
 
-export default NewArtworkForm;
+export default EditArtworkForm;
