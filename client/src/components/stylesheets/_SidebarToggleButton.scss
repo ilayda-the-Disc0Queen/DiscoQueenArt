@@ -1,0 +1,33 @@
+// .button-logo {
+//   // background-image: linear-gradient(rgb(225, 225,225), rgb(225,225,225)), url('https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png');
+//   // border-radius: 50%;
+
+//
+// }
+
+// CHANGE THIS SO WHEN LOGO IS CLICKED THE MENU APPEARS
+
+.toggle-button {
+  cursor: pointer;
+  border: none;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 3vh;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  padding: 0;
+  box-sizing: border-box;
+  background:transparent;;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__line {
+  width: 30px;
+  height: 1px;
+  background: pink;
+}

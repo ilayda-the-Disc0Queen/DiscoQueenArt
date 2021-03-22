@@ -1,0 +1,36 @@
+.sidebar-container {
+  height: 100vh;
+  background: rgba(26,37,69, 0.95);
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  max-width: 400px;
+  z-index: 200; // value > z-index in backdrop
+}
+
+.sidebar-container ul {
+  height: 100%; // ensures justify-content will center list items
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar-container li {
+  margin: 0.5rem 0;
+}
+
+.sidebar-container a {
+  color: white;
+  text-decoration: none;
+  font-size:  4vh;
+}
+
+.sidebar-container a:hover,
+.sidebar-container a:active {
+  color: #CD6F29;
+}
+
+

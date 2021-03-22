@@ -59,6 +59,15 @@
   position: absolute;
   }
 
+  .banner-logo {
+    background-image: linear-gradient(rgb(225, 225,225), rgb(225,225,225)), url('https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png');
+    border-radius: 50%;
+    height: 7vh;
+    top: 3vh;
+    left: 3vh;
+    position: absolute;
+  }
+
   .image-banner {
     /* The image used */
     background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0)), url('https://res.cloudinary.com/dv59x91lc/image/upload/v1600531990/mural_full_bgg9p1.jpg');
@@ -73,15 +82,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-  }
-
-  .banner-logo {
-    background-image: linear-gradient(rgb(225, 225,225), rgb(225,225,225)), url('https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png');
-    border-radius: 50%;
-    height: 7vh;
-    top: 3vh;
-    left: 3vh;
-    position: absolute;
   }
 
   .banner.text.container {
