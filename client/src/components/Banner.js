@@ -6,6 +6,7 @@ const Banner = () => {
   return (
     <div className="image-banner">
       <div className="banner text container">
+        <img className="banner-logo" src="https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png" alt="Ilayda Bakare's signature logo"></img>
         <h1 id="banner-name" className="banner text header">
           DiscoQueen Art by Ilayda Bakare
         </h1>
