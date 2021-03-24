@@ -5,7 +5,7 @@ import SidebarToggleButton from './SidebarToggleButton';
 const navbar = props => (
   <header className="navbar">
     <nav className="navbar__navigation">
-      <div>
+      <div className="navbar__toggle-button">
         <SidebarToggleButton click={props.SidebarClickHandler} />
       </div>
       <div className="navbar__logo"><a href="/">IB Logo</a></div>

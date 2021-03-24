@@ -19,17 +19,14 @@ class App extends Component {
   };
 
   render() {
-    let sidebar;
     let backdrop;
     if (this.state.sidebarOpen) {
-      sidebar = <Sidebar/>
       backdrop = <Backdrop click={this.BackdropClickHandler}/> //add "click=..." second
     }
     return (
         <div className="App">
           <Navbar SidebarClickHandler={this.SidebarToggleClickHandler}/>
-          {console.log('this =', this)}
-          {sidebar}
+          <Sidebar show={this.state.sidebarOpen}/>
           {backdrop}
         </div>
     );

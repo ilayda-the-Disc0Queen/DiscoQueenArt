@@ -49,3 +49,18 @@
 .navbar_navigation-items a:active {
   color: orange;
 }
+
+@media (max-width: 768px) {
+  .navbar_navigation-items {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar__toggle-button {
+    display: none;
+    padding-left: 0;
+  }
+}
+
+
