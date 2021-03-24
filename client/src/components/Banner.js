@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
 import './stylesheets/_Banner.scss';
-// import Navbar from './Navbar';
-import SidebarToggleButton from './SidebarToggleButton'
-import Sidebar from './Sidebar';
-import Backdrop from './Backdrop';
 
 class Banner extends Component {
   state = {
@@ -27,7 +23,7 @@ class Banner extends Component {
       <div className="image-banner">
         <div className="banner text container">
           <img className="banner-logo" src="https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png" alt="Ilayda Bakare's signature logo"></img>
-          <SidebarToggleButton />
+          <Banner SidebarClickHandler={this.SidebarToggleClickHandler}/>
           {Sidebar}
           {Backdrop}
           <h1 id="banner-name" className="banner text header">

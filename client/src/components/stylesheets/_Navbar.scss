@@ -1,0 +1,51 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: yellow;
+  top: 0;
+  left: 0;
+}
+
+.navbar__navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.navbar__logo a {
+  // background-image: linear-gradient(rgb(225, 225,225), rgb(225,225,225)), url('https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png');
+  // border-radius: 50%;
+  // height: 7vh;
+  // top: 3vh;
+  // left: 3vh;
+  // position: absolute;
+  padding-left: 32px;
+  color: red;
+  text-decoration: none;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.navbar_navigation-items a {
+  color: pink;
+  text-decoration: none;
+}
+
+.navbar_navigation-items ul {
+  list-style-type: none;
+  margin: none;
+  padding: none;
+  display: flex;
+}
+
+.navbar_navigation-items li {
+  padding: 0 5px;
+}
+
+.navbar_navigation-items a:hover,
+.navbar_navigation-items a:active {
+  color: orange;
+}
