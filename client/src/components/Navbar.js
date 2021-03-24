@@ -7,7 +7,6 @@ const navbar = props => (
     <nav className="navbar__navigation">
       <div>
         <SidebarToggleButton click={props.SidebarClickHandler} />
-        {console.log('props =', props)}
       </div>
       <div className="navbar__logo"><a href="/">IB Logo</a></div>
       <div className="spacer"></div>

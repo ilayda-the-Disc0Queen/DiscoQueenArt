@@ -14,12 +14,16 @@ class App extends Component {
     });
   };
 
+  BackdropClickHandler = () => {
+    this.setState({sidebarOpen: false}) // doesnt have to be a function because we dont care about prevState of sidebar! Do this first
+  };
+
   render() {
     let sidebar;
     let backdrop;
     if (this.state.sidebarOpen) {
       sidebar = <Sidebar/>
-      backdrop = <Backdrop/>
+      backdrop = <Backdrop click={this.BackdropClickHandler}/> //add "click=..." second
     }
     return (
         <div className="App">
