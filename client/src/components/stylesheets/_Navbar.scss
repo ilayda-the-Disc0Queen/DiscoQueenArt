@@ -1,9 +1,10 @@
 .navbar {
   position: fixed;
   width: 100%;
-  background: yellow;
+  background: transparent;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .navbar__navigation {
@@ -13,16 +14,9 @@
   padding: 0 1rem;
 }
 
-.navbar__logo a {
-  // background-image: linear-gradient(rgb(225, 225,225), rgb(225,225,225)), url('https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png');
-  // border-radius: 50%;
-  // height: 7vh;
-  // top: 3vh;
-  // left: 3vh;
-  // position: absolute;
-  padding-left: 32px;
-  color: red;
-  text-decoration: none;
+.navbar_title {
+  font-size: 2vh;
+  color: white;
 }
 
 .spacer {
@@ -50,10 +44,12 @@
   color: orange;
 }
 
-.navbar__toggle-button {
-  background-image: linear-gradient(rgb(225, 225,225), rgb(225,225,225)), url('https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png');
-
+.navbar__logo_and_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
 
 @media (max-width: 768px) {
   .navbar_navigation-items {
@@ -61,11 +57,33 @@
   }
 }
 
-// @media (min-width: 769px) {
-//   .navbar__toggle-button {
-//     display: none;
-//     padding-left: 0;
-//   }
-// }
+@media only screen and (max-width: 600px) {
+  .navbar_title {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 4vh;
+  text-shadow: 0.2vh 0.2vh #CD6F29;
+  }
 
+  .banner-logo {
+    background-image: linear-gradient(rgb(225, 225,225), rgb(225,225,225)), url('https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png');
+    border-radius: 50%;
+    height: 7vh;
+    top: 3vh;
+    left: 3vh;
+    position: absolute;
+  }
+}
 
+@media only screen and (min-width: 600px) {
+  .navbar_title {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 5vh;
+  text-shadow: 0.2vh 0.2vh #CD6F29;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .navbar_title {
+  font-size: 6vh;
+  }
+}
