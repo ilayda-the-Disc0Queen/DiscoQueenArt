@@ -50,17 +50,22 @@
   color: orange;
 }
 
+.navbar__toggle-button {
+  background-image: linear-gradient(rgb(225, 225,225), rgb(225,225,225)), url('https://res.cloudinary.com/dv59x91lc/image/upload/v1616425554/IB-logo_wxotos.png');
+
+}
+
 @media (max-width: 768px) {
   .navbar_navigation-items {
     display: none;
   }
 }
 
-@media (min-width: 769px) {
-  .navbar__toggle-button {
-    display: none;
-    padding-left: 0;
-  }
-}
+// @media (min-width: 769px) {
+//   .navbar__toggle-button {
+//     display: none;
+//     padding-left: 0;
+//   }
+// }
 
 

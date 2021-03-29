@@ -12,6 +12,7 @@ const Sidebar = props => {
         <li><a href="/">Home</a></li>
         <li><a href="/">Artwork</a></li>
         <li><a href="/">Exhibitions</a></li>
+        <li><a href="/">Merchandise</a></li>
       </ul>
     </nav>
   )
