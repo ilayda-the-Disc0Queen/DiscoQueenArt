@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Backdrop from './components/Backdrop';
-import FeaturedImagePage from './components/FeaturedImagePage';
 
 class App extends Component {
   state = {
@@ -29,7 +28,6 @@ class App extends Component {
           <Navbar SidebarClickHandler={this.SidebarToggleClickHandler}/>
           <Sidebar show={this.state.sidebarOpen}/>
           {backdrop}
-          <FeaturedImagePage/>
         </div>
     );
   }

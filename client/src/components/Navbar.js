@@ -11,10 +11,6 @@ const navbar = props => (
       </div>
       <div className="spacer"></div>
       <div className="navbar_navigation-items">
-       {/*  <ul>
-          <li><a href="/">Products</a></li>
-          <li><a href="/">Some shit</a></li>
-        </ul> */}
       </div>
     </nav>
   </header>

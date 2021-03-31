@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Artwork = ({ artwork, removeArtwork, editArtwork, editing }) => (
     <div className="artwork" key={artwork.id}>
       <h4>{artwork.title}</h4>
