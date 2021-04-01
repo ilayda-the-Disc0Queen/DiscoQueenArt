@@ -1,7 +1,7 @@
 const ArtworkData = [
  {
    "id": 1,
-   "name": "Judith",
+   "title": "Judith",
    "medium": "Black pen",
    "date": "April 2019",
    "category": "Drawing",
@@ -10,7 +10,7 @@ const ArtworkData = [
  },
  {
    "id": 2,
-   "name": "Gardens",
+   "title": "Gardens",
    "medium": "Indian ink and plastic film",
    "date": "2016",
    "category": "Drawing",
@@ -19,7 +19,7 @@ const ArtworkData = [
  },
  {
    "id": 3,
-   "name": "City #1",
+   "title": "City #1",
    "medium": "Coloured pens with fine black detailing",
    "date": "July 2020",
    "category": "Drawing",
@@ -28,7 +28,7 @@ const ArtworkData = [
  },
  {
    "id": 4,
-   "name": "Sara Bernhardt",
+   "title": "Sara Bernhardt",
    "medium": "Coloured inks with metallic detailing",
    "date": "July 2017",
    "category": "Drawing",
@@ -37,7 +37,7 @@ const ArtworkData = [
  },
  {
    "id": 5,
-   "name": "Mother's day",
+   "title": "Mother's day",
    "medium": "Coloured pens on card",
    "date": "March 2021",
    "category": "Card",
@@ -46,7 +46,7 @@ const ArtworkData = [
  },
  {
    "id": 6,
-   "name": "On Top of the World!",
+   "title": "On Top of the World!",
    "medium": "Coloured pens",
    "date": "March 2021",
    "category": "Drawing",
@@ -55,7 +55,7 @@ const ArtworkData = [
  },
  {
    "id": 7,
-   "name": "We Again Illustrations",
+   "title": "We Again Illustrations",
    "medium": "Coloured markers and black paint pen",
    "date": "September 2020",
    "category": "Illustration",
@@ -64,7 +64,7 @@ const ArtworkData = [
  },
  {
    "id": 8,
-   "name": "The Empress",
+   "title": "The Empress",
    "medium": "Coloured pens with fine black detail",
    "date": "October 2020",
    "category": "Drawing",
@@ -73,7 +73,7 @@ const ArtworkData = [
  },
  {
    "id": 9,
-   "name": "Moon",
+   "title": "Moon",
    "medium": "Coloured inks with metallic detailing",
    "date": "March 2018",
    "category": "Drawing",
@@ -82,7 +82,7 @@ const ArtworkData = [
  },
  {
    "id": 10,
-   "name": "The Girl with Flowers",
+   "title": "The Girl with Flowers",
    "medium": "Coloured inks with metallic detailing",
    "date": "October 2017",
    "category": "Drawing",

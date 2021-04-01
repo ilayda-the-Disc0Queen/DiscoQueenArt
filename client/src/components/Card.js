@@ -1,17 +1,14 @@
 import React from 'react';
 import './stylesheets/_Card.scss';
 
-const Card = (props) => (
-  <div style={{ color: '#fff' }}>
-    <h2>The Benefits of Green Apples</h2>
-    <div>3/2/2019</div>
-    <div>
-      Green apples have a high fiber content which helps in increasing the
-      body's metabolism. While consuming an apple, make sure that you're not
-      tossing the peel in the trash. Consuming apple with its peel improves the
-      overall health. Due to its high fiber content, apple helps in
-      detoxification process. It keeps the liver and digestive system away from
-      harmful elements.
+const Card = ({title, date, category, image_url, alt}) => (
+  <div className="card">
+    <img className="card-image" src={image_url} alt={alt}/>
+    <div className="card-content">
+      <h2>{title}</h2>
+      <div>{date}</div>
+      <div>{category}</div>
+      <div>{alt}</div>
     </div>
   </div>
 )

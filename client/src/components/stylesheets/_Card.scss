@@ -1,0 +1,25 @@
+.card {
+  width: 30%;
+  transition: 0.3s;
+  margin: 5%;
+  border-radius: 1%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 33%;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-content {
+  padding: 3%;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: largest;
+  margin: 5% 5%;
+}
