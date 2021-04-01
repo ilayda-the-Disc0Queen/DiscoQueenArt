@@ -22,15 +22,25 @@ const AllArtwork = props => {
   })
 
   const DrawingsCard = ArtworkData.find(artwork => artwork.category === 'Drawing');
-  console.log('vdc =', DrawingsCard.title);
+  const IllustrationsCard = ArtworkData.find(artwork => artwork.category === 'Illustration');
+  const CardsCard = ArtworkData.find(artwork => artwork.category === 'Card');
+
 
   return (
       <div className="all-artwork-container">
           <h1 className="banner text" >Take a look at my art!</h1>
           <div className="artwork-categories">
-            <Card
+            <Card className="artwork-card"
               title="Drawings"
               image_url={DrawingsCard.image_url}
+            />
+            <Card className="artwork-card"
+              title="Illustrations"
+              image_url={IllustrationsCard.image_url}
+            />
+            <Card className="artwork-card"
+              title="Cards"
+              image_url={CardsCard.image_url}
             />
           </div>
       </div>

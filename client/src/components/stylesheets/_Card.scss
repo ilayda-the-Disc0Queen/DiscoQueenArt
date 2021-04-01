@@ -1,5 +1,5 @@
 .card {
-  width: 30%;
+  max-width: 100%;
   transition: 0.3s;
   margin: 5%;
   border-radius: 1%;
@@ -7,7 +7,7 @@
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  width: 33%;
+  // width: 33%;
 }
 
 .card-image {
