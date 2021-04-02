@@ -25,7 +25,7 @@ class App extends Component {
     }
     return (
         <div className="App">
-          <Navbar SidebarClickHandler={this.SidebarToggleClickHandler}/>
+          <Navbar className="homepage" SidebarClickHandler={this.SidebarToggleClickHandler}/>
           <Sidebar show={this.state.sidebarOpen}/>
           {backdrop}
         </div>
