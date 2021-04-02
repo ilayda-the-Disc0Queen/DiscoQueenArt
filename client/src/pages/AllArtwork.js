@@ -4,6 +4,8 @@ import ArtworkData from '../data/ArtworkData';
 import Card from '../components/Card';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import Drawings from './Drawings';
+import Illustrations from './Illustrations';
+import Cards from './Cards';
 
 const AllArtwork = props => {
   const artworks = ArtworkData.map((artwork) => {
@@ -57,6 +59,8 @@ const AllArtwork = props => {
       </div>
       <Switch>
         <Route path="/Drawings" component={Drawings}/>
+        <Route path="/Illustrations" component={Illustrations}/>
+        <Route path="/Cards" component={Cards}/>
       </Switch>
     </BrowserRouter>
   );

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './stylesheets/_Sidebar.scss';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import AllArtwork from "../pages/AllArtwork";
-import Page2 from "../pages/Page-2";
-import Page3 from "../pages/Page-3";
+import Drawings from "../pages/Drawings";
+import Illustrations from "../pages/Illustrations";
 import FeaturedImagePage from './FeaturedImagePage';
 
 const Sidebar = props => {
@@ -20,15 +20,15 @@ const Sidebar = props => {
         <ul>
           <li><Link to="/" >Home</Link></li>
           <li><Link to="/AllArtwork">Artwork</Link></li>
-          <li><Link to="/page-2">Exhibitions</Link></li>
+          <li><Link to="/Drawings">Exhibitions</Link></li>
           <li><Link to="/page-3">Merchandise</Link></li>
         </ul>
       </div>
       <Switch>
         <Route path="/" exact component={FeaturedImagePage}/>
         <Route path="/AllArtwork" component={AllArtwork}/>
-        <Route path="/page-2" component={Page2}/>
-        <Route path="/page-3" component={Page3}/>
+        <Route path="/Drawings" component={Drawings}/>
+        <Route path="/Illustrations" component={Illustrations}/>
       </Switch>
     </BrowserRouter>
   )
