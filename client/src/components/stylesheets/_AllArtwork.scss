@@ -12,7 +12,11 @@
   justify-items: center;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px,1fr));
+}
+
+.artwork-categories h2{
+  text-decoration: none;
 }
 
 .artwork-card:hover {

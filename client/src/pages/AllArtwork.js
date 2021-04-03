@@ -34,8 +34,8 @@ const AllArtwork = props => {
     <BrowserRouter>
       <div className="all-artwork-container">
         <h1 className="banner text" >Take a look at my art!</h1>
-        <div className="artwork-categories">
           <nav>
+            <div className="artwork-categories">
             <Link to="/Drawings">
               <Card className="artwork-card"
                 title="Drawings"
@@ -54,8 +54,8 @@ const AllArtwork = props => {
                 image_url={CardsCard.image_url}
               />
             </Link>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
       <Switch>
         <Route path="/Drawings" component={Drawings}/>
