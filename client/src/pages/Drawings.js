@@ -14,34 +14,31 @@ const Drawings = props => {
     return AllDrawings;
   })
   return (
-    <BrowserRouter>
-    {console.log(AllDrawings)};
       <div>
-        <h2>All drawings</h2>
+        <h2>Drawings</h2>
         {AllDrawings.map((drawing) => {
           return(
             <div  key={drawing.id}>
               <div className="all-drawings-container">
-                <nav>
                   <div className="drawing-container">
-                  <Link to={`/Drawings/${drawing.id}`}>
-                    <Card className="drawing-card"
-
-                      title={drawing.title}
-                      image_url={drawing.image_url}
-                    />
-                  </Link>
+                    <div className="container">
+                      <div className="row justify-content-md-center">
+                        <div className="col-md-auto"></div>
+                        <div className="col-md-auto col col-lg-7">
+                            <Card className="drawing-card"
+                              title={drawing.title}
+                              image_url={drawing.image_url}
+                            />
+                        </div>
+                        <div className="col-md-auto"></div>
+                      </div>
+                    </div>
                 </div>
-              </nav>
               </div>
-              <Switch>
-                <Route path="/Drawings/:id" component={DrawingInfo}/>
-              </Switch>
             </div>
             )
         })}
       </div>
-    </BrowserRouter>
   );
 }
 
